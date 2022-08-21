@@ -1,8 +1,8 @@
 package study.processors;
 
+import org.jetbrains.annotations.NotNull;
 import study.output.BasicOutput;
 import study.storage.BasicVariables;
-import org.jetbrains.annotations.NotNull;
 
 /**
  * @author william
@@ -10,6 +10,9 @@ import org.jetbrains.annotations.NotNull;
 public class ProcessIO {
 
 	public static final @NotNull String CLASS_NAME = "ProcessIO";
+
+	private ProcessIO() {
+	}
 
 	public static class ProcessInput {
 

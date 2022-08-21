@@ -69,6 +69,10 @@ import study.storage.BasicVariables;
  */
 public class Main {
 
+
+	/**
+	 * main(String[]) might be final wrote in near-future(0.5 year)
+	 */
 	public static void main( String[] args ) {
 
 		BasicOutput basicOutput = new BasicOutput();
@@ -76,14 +80,14 @@ public class Main {
 
 		boolean exit = false;
 
-		while ( ! exit ) {
+		while ( !exit ) {
 
 			basicOutput.greetings();
 
 			int rtnCode = processInput.onCreate( BasicInput.recorder( BasicVariables.BASIC_INPUT_RECORDER_TYPE_REGULAR ) );
 
-			if ( rtnCode != 0 ) {
-
+			if ( rtnCode == BasicVariables.ConsoleReturn.EXIT_CODE ) {
+				exit = true;
 			}
 
 		}

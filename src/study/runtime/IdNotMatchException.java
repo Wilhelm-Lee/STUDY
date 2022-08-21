@@ -114,11 +114,11 @@ public class IdNotMatchException
 				BasicVariables.BASIC_OUTPUT_LOG_TYPE_ERROR,
 				cause,
 				message +
-				String.format(
-						"%b, %b",
-						enableSuppression,
-						writableStackTrace
-				)
+						String.format(
+								"%b, %b",
+								enableSuppression,
+								writableStackTrace
+						)
 		);
 	}
 }

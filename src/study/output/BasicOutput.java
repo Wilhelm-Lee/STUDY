@@ -1,9 +1,9 @@
 package study.output;
 
-import study.storage.BasicVariables;
-import study.storage.Settings;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import study.storage.BasicVariables;
+import study.storage.Settings;
 
 /**
  * @author william
@@ -22,13 +22,13 @@ public class BasicOutput {
 
 		return isFront
 				? BasicVariables.TERMINAL_COLOR_DEFAULT_CODE_BEFORE_COLOR_CONTENT +
-				  BasicVariables.BASIC_OUTPUT_LOG_FORMAT_COLOR_FRONT +
-				  color +
-				  BasicVariables.TERMINAL_COLOR_DEFAULT_CODE_AFTER_COLOR_CONTENT
+				BasicVariables.BASIC_OUTPUT_LOG_FORMAT_COLOR_FRONT +
+				color +
+				BasicVariables.TERMINAL_COLOR_DEFAULT_CODE_AFTER_COLOR_CONTENT
 				: BasicVariables.TERMINAL_COLOR_DEFAULT_CODE_BEFORE_COLOR_CONTENT +
-				  BasicVariables.BASIC_OUTPUT_LOG_FORMAT_COLOR_BACK +
-				  color +
-				  BasicVariables.TERMINAL_COLOR_DEFAULT_CODE_AFTER_COLOR_CONTENT;
+				BasicVariables.BASIC_OUTPUT_LOG_FORMAT_COLOR_BACK +
+				color +
+				BasicVariables.TERMINAL_COLOR_DEFAULT_CODE_AFTER_COLOR_CONTENT;
 	}
 
 	public static void log(
@@ -41,12 +41,12 @@ public class BasicOutput {
 				BasicVariables.BASIC_OUTPUT_LOG_TYPE_REQUEST.equalsIgnoreCase( typeOfLog )
 						? BasicVariables.TERMINAL_COLOR_CYAN
 						: BasicVariables.BASIC_OUTPUT_LOG_TYPE_INFO.equalsIgnoreCase( typeOfLog )
-								? BasicVariables.TERMINAL_COLOR_BLUE
-								: BasicVariables.BASIC_OUTPUT_LOG_TYPE_WARN.equalsIgnoreCase( typeOfLog )
-										? BasicVariables.TERMINAL_COLOR_YELLOW
-										: BasicVariables.BASIC_OUTPUT_LOG_TYPE_ERROR.equalsIgnoreCase( typeOfLog )
-												? BasicVariables.TERMINAL_COLOR_RED
-												: BasicVariables.TERMINAL_COLOR_RESET
+						? BasicVariables.TERMINAL_COLOR_BLUE
+						: BasicVariables.BASIC_OUTPUT_LOG_TYPE_WARN.equalsIgnoreCase( typeOfLog )
+						? BasicVariables.TERMINAL_COLOR_YELLOW
+						: BasicVariables.BASIC_OUTPUT_LOG_TYPE_ERROR.equalsIgnoreCase( typeOfLog )
+						? BasicVariables.TERMINAL_COLOR_RED
+						: BasicVariables.TERMINAL_COLOR_RESET
 		) + typeOfLog + ": " + content );
 	}
 
@@ -61,12 +61,12 @@ public class BasicOutput {
 				BasicVariables.BASIC_OUTPUT_LOG_TYPE_REQUEST.equalsIgnoreCase( typeOfLog )
 						? BasicVariables.TERMINAL_COLOR_CYAN
 						: BasicVariables.BASIC_OUTPUT_LOG_TYPE_INFO.equalsIgnoreCase( typeOfLog )
-								? BasicVariables.TERMINAL_COLOR_BLUE
-								: BasicVariables.BASIC_OUTPUT_LOG_TYPE_WARN.equalsIgnoreCase( typeOfLog )
-										? BasicVariables.TERMINAL_COLOR_YELLOW
-										: BasicVariables.BASIC_OUTPUT_LOG_TYPE_ERROR.equalsIgnoreCase( typeOfLog )
-												? BasicVariables.TERMINAL_COLOR_RED
-												: BasicVariables.TERMINAL_COLOR_RESET
+						? BasicVariables.TERMINAL_COLOR_BLUE
+						: BasicVariables.BASIC_OUTPUT_LOG_TYPE_WARN.equalsIgnoreCase( typeOfLog )
+						? BasicVariables.TERMINAL_COLOR_YELLOW
+						: BasicVariables.BASIC_OUTPUT_LOG_TYPE_ERROR.equalsIgnoreCase( typeOfLog )
+						? BasicVariables.TERMINAL_COLOR_RED
+						: BasicVariables.TERMINAL_COLOR_RESET
 		) + typeOfLog + "(" + initiator + "): " + content );
 	}
 
@@ -145,10 +145,10 @@ public class BasicOutput {
 	public void greetings() {
 
 		@NotNull String content = Settings.greetingsBeginSideSymbol
-								  + BasicVariables.USER_NAME
-								  + BasicVariables.SPACE
-								  + new Settings().localDateTime.format( new Settings().formatter )
-								  + Settings.greetingsEndSideSymbol;
+				+ BasicVariables.USER_NAME
+				+ BasicVariables.SPACE
+				+ new Settings().localDateTime.format( new Settings().formatter )
+				+ Settings.greetingsEndSideSymbol;
 
 		// Do printing
 		System.out.print( BasicOutput.dyeing(

@@ -1,0 +1,19 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Customized ignored files
+# In Project
+/CODE_OF_CONDUCT.md
+# In Global
+/IdeaIC2022.2-backup_
+/git_toolbox_prj.xml
+/misc.xml
+/uiDesigner.xml
+/modules.xml
+/vcs.xml
+/codeStyles
+/Study.iml
+/inspectionProfiles
+/libraries
+/sonarlint

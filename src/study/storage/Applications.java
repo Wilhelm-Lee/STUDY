@@ -1,9 +1,9 @@
 package study.storage;
 
+import org.jetbrains.annotations.NotNull;
 import study.output.BasicOutput;
 import study.processors.ProcessFile;
 import study.runtime.BasicException;
-import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
 import java.time.LocalDateTime;
@@ -104,9 +104,9 @@ public class Applications {
 			LocalDateTime tmpLDTEnd = LocalDateTime.of(
 					itemTimeStampLocalDateTimeStart.getYear() + itemTimeStampLocalDateTimeDuration.getYear(),
 					itemTimeStampLocalDateTimeStart.getMonthValue() +
-					itemTimeStampLocalDateTimeDuration.getMonthValue(),
+							itemTimeStampLocalDateTimeDuration.getMonthValue(),
 					itemTimeStampLocalDateTimeStart.getDayOfMonth() +
-					itemTimeStampLocalDateTimeDuration.getDayOfMonth(),
+							itemTimeStampLocalDateTimeDuration.getDayOfMonth(),
 					itemTimeStampLocalDateTimeStart.getHour() + itemTimeStampLocalDateTimeDuration.getHour(),
 					itemTimeStampLocalDateTimeStart.getMinute() + itemTimeStampLocalDateTimeDuration.getMinute(),
 					itemTimeStampLocalDateTimeStart.getSecond() + itemTimeStampLocalDateTimeDuration.getSecond(),
@@ -124,7 +124,7 @@ public class Applications {
 		public void onCreate() {
 
 			// Use @isAnomalous to judge whether onCreate(File, boolean) is anomalous -> true: false
-			if ( ! fc.onCreate(
+			if ( !fc.onCreate(
 					todoList.TARGET_FILE,
 					false
 			) ) {

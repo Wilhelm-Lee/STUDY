@@ -1,9 +1,9 @@
 package study.processors;
 
+import org.jetbrains.annotations.NotNull;
 import study.input.BasicInput;
 import study.output.BasicOutput;
 import study.storage.BasicVariables;
-import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,6 +16,9 @@ import java.util.List;
 public class ProcessFile {
 
 	public static final String CLASS_NAME = "ProcessFile";
+
+	private ProcessFile() {
+	}
 
 	public static class FileCreator {
 
@@ -35,21 +38,21 @@ public class ProcessFile {
 					targetObject.isFile()
 							? BasicVariables.FILE_MANAGER_OUTPUT_TEXT_HOW_WOULD_YOU_LIKE_TO +
 							/* Specific Action by @CLASS_NAME (down) */
-							  BasicVariables.FILE_MANAGER_ACTIONS_CREATING +
-							  BasicVariables.FILE_MANAGER_TARGET_TYPE_FILE_STRING +
-							  targetObject.getAbsoluteFile() +
-							  BasicVariables.FILE_MANAGER_OUTPUT_TEXT_QUESTIONMARK_YN
+							BasicVariables.FILE_MANAGER_ACTIONS_CREATING +
+							BasicVariables.FILE_MANAGER_TARGET_TYPE_FILE_STRING +
+							targetObject.getAbsoluteFile() +
+							BasicVariables.FILE_MANAGER_OUTPUT_TEXT_QUESTIONMARK_YN
 							: BasicVariables.FILE_MANAGER_OUTPUT_TEXT_HOW_WOULD_YOU_LIKE_TO +
-							  BasicVariables.FILE_MANAGER_ACTIONS_CREATING +
-							  BasicVariables.FILE_MANAGER_TARGET_TYPE_PATH_STRING +
-							  targetObject.getAbsolutePath() +
-							  BasicVariables.FILE_MANAGER_OUTPUT_TEXT_QUESTIONMARK_YN
+							BasicVariables.FILE_MANAGER_ACTIONS_CREATING +
+							BasicVariables.FILE_MANAGER_TARGET_TYPE_PATH_STRING +
+							targetObject.getAbsolutePath() +
+							BasicVariables.FILE_MANAGER_OUTPUT_TEXT_QUESTIONMARK_YN
 			);
 
 			final String ans = BasicInput.recorder( BasicVariables.FILE_MANAGER_OUTPUT_TEXT_QUESTIONMARK_YN );
 
 			return BasicVariables.FILE_MANAGER_OUTPUT_TEXT_YES.equalsIgnoreCase( ans )
-				   || BasicVariables.FILE_MANAGER_OUTPUT_TEXT_Y.equalsIgnoreCase( ans );
+					|| BasicVariables.FILE_MANAGER_OUTPUT_TEXT_Y.equalsIgnoreCase( ans );
 		}
 
 		private void creating(
@@ -73,7 +76,7 @@ public class ProcessFile {
 				}
 
 				// if not exists
-				if ( ! targetObject.exists() ) {
+				if ( !targetObject.exists() ) {
 					// Then create it
 					// Ask
 					if ( ifAskNeeded ) {
@@ -95,8 +98,8 @@ public class ProcessFile {
 					BasicOutput.log(
 							BasicVariables.BASIC_OUTPUT_LOG_TYPE_INFO,
 							targetType.toUpperCase() +
-							targetObject.getAbsoluteFile() +
-							BasicVariables.FILE_MANAGER_OUTPUT_TEXT_HAD_ALREADY_EXISTED
+									targetObject.getAbsoluteFile() +
+									BasicVariables.FILE_MANAGER_OUTPUT_TEXT_HAD_ALREADY_EXISTED
 					);
 				}
 			} catch ( IOException ioe ) {
@@ -117,12 +120,16 @@ public class ProcessFile {
 			BasicOutput.log(
 					BasicVariables.BASIC_OUTPUT_LOG_TYPE_WARN,
 					action +
-					targetType +
-					targetObject +
-					BasicVariables.FILE_MANAGER_OUTPUT_TEXT_FAILED_CAUSED_AND_CANCELED_BY_USER
+							targetType +
+							targetObject +
+							BasicVariables.FILE_MANAGER_OUTPUT_TEXT_FAILED_CAUSED_AND_CANCELED_BY_USER
 			);
 		}
 
+		/**
+		 * boolean checkExistence( @NotNull File, @NotNull String ) is temporarily
+		 * inverted in use due to the lack of callers.
+		 */
 		private boolean checkExistence(
 				@NotNull File targetObject,
 				@NotNull String targetType
@@ -139,7 +146,7 @@ public class ProcessFile {
 		) {
 
 			try {
-				if ( ! checkExistence(
+				if ( !checkExistence(
 						new File( targetFile.getParent() ),
 						BasicVariables.FILE_MANAGER_TARGET_TYPE_PATH_STRING
 				) ) {
@@ -166,12 +173,12 @@ public class ProcessFile {
 					BasicOutput.log(
 							BasicVariables.BASIC_OUTPUT_LOG_TYPE_INFO,
 							BasicVariables.TARGET +
-							BasicVariables.FILE_MANAGER_TARGET_TYPE_PATH_STRING +
-							new File( targetFile.getParent() ).getAbsoluteFile() +
-							BasicVariables.FILE_MANAGER_OUTPUT_TEXT_HAD_ALREADY_EXISTED
+									BasicVariables.FILE_MANAGER_TARGET_TYPE_PATH_STRING +
+									new File( targetFile.getParent() ).getAbsoluteFile() +
+									BasicVariables.FILE_MANAGER_OUTPUT_TEXT_HAD_ALREADY_EXISTED
 					);
 					// Judge whether the targetFile exists or not
-					if ( ! checkExistence(
+					if ( !checkExistence(
 							targetFile.getAbsoluteFile(),
 							BasicVariables.FILE_MANAGER_TARGET_TYPE_FILE_STRING
 					) ) {
@@ -196,9 +203,9 @@ public class ProcessFile {
 						BasicOutput.log(
 								BasicVariables.BASIC_OUTPUT_LOG_TYPE_INFO,
 								BasicVariables.TARGET +
-								BasicVariables.FILE_MANAGER_TARGET_TYPE_FILE_STRING +
-								targetFile.getAbsoluteFile() +
-								BasicVariables.FILE_MANAGER_OUTPUT_TEXT_HAD_ALREADY_EXISTED
+										BasicVariables.FILE_MANAGER_TARGET_TYPE_FILE_STRING +
+										targetFile.getAbsoluteFile() +
+										BasicVariables.FILE_MANAGER_OUTPUT_TEXT_HAD_ALREADY_EXISTED
 						);
 					}
 				}
@@ -217,9 +224,11 @@ public class ProcessFile {
 						FileCreator.CLASS_NAME,
 						e.getLocalizedMessage()
 				);
-				return isAllRight = false;
+				isAllRight = false;
+				return false;
 			}
-			return isAllRight = true;
+			isAllRight = true;
+			return true;
 		}
 	}
 }

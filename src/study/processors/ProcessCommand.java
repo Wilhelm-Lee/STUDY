@@ -1,8 +1,9 @@
 package study.processors;
 
-import study.storage.BasicVariables;
 import org.jetbrains.annotations.NotNull;
+import study.storage.BasicVariables;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.util.Scanner;
@@ -14,19 +15,14 @@ public class ProcessCommand {
 
 	public static final @NotNull String CLASS_NAME = "ProcessCommand";
 
-	private static final Scanner SCN = new Scanner( System.in );
+	private ProcessCommand() {
+	}
 
 	public static int onCreate( String[] userInput ) {
 
-		for (
-				int i = 0;
-				i < userInput.length;
-				i++
-		) {
+		for ( String cmdIdx : userInput ) {
 
-			String cmd_idx = userInput[ i ];
-
-			int rtnCode = process( cmd_idx );
+			int rtnCode = process( cmdIdx );
 
 			if ( rtnCode != 0 ) {
 				return rtnCode;
@@ -42,25 +38,26 @@ public class ProcessCommand {
 
 		ProcessIO.ProcessOutput processOutput = new ProcessIO.ProcessOutput();
 
-		if ( ! cmd.isEmpty() ) {
+		if ( !cmd.isEmpty() ) {
 
 			if ( cmd.equalsIgnoreCase( BasicVariables.CommandSet.HELP ) ) {
 				processOutput.onCreate(
 						BasicVariables.BASIC_OUTPUT_LOG_TYPE_INFO,
-						cmd_help_help()
+						BasicVariables.CommandSet.DOC_ABOUT +
+								BasicVariables.CommandSet.DOC_HELP
 				);
 
-				return BasicVariables.ConsoleReturn.ERR_NONE;
+				return BasicVariables.ConsoleReturn.NORMAL;
 
 			} else if ( cmd.equalsIgnoreCase( BasicVariables.CommandSet.EXIT ) ) {
-
+				return BasicVariables.ConsoleReturn.EXIT_CODE;
 
 			} else if ( cmd.equalsIgnoreCase( BasicVariables.CommandSet.TIME ) ) {
 				processOutput.onCreate(
 						BasicVariables.BASIC_OUTPUT_LOG_TYPE_INFO,
-						cmd_time().toString()
+						cmdTime().toString()
 				);
-				return BasicVariables.ConsoleReturn.ERR_NONE;
+				return BasicVariables.ConsoleReturn.NORMAL;
 
 			} else {
 				processOutput.onCreate(
@@ -74,30 +71,28 @@ public class ProcessCommand {
 
 		}
 
-		return BasicVariables.ConsoleReturn.ERR_ILLEGAL_INPUT_FINAL;
+		return BasicVariables.ConsoleReturn.ERR_ILLEGAL_INPUT_ALTERNATE;
 
 	}
 
-	private static LocalDateTime cmd_time() {
+	private static LocalDateTime cmdTime() {
 
 		return LocalDateTime.now( ZoneOffset.ofHours( BasicVariables.TIME_ZONE_OFFSET_EAST_EIGHT ) );
 
 	}
 
-	private static String cmd_help_help() {
-
-		return BasicVariables.CommandSet.DOC_ABOUT +
-			   BasicVariables.CommandSet.DOC_HELP;
-
-	}
+	// TODO: I THINK ALL THE CMD SHOULD HAVE THEIR OWN CLASS
 
 	/**
+	 * This method is intended to be used when pattern "help xxx" appears.
+	 * Used to investigate more function about cmd HELP
+	 *
 	 * @Explaination The reason why do not I use :? is because once I add
 	 * or remove some expression from it, it is going to
 	 * be a massive work to do.
 	 * Especially when writing {@code default} section.
 	 */
-	private static String cmd_help( String helpCmd ) {
+	private static String cmdHelp( String helpCmd ) {
 
 		// TODO: Use ProcessIO.java instead
 
@@ -109,6 +104,25 @@ public class ProcessCommand {
 			default -> BasicVariables.CommandSet.CMD_NOT_FOUND;
 		};
 
+	}
+
+	public static class Help {
+
+		public static final @NotNull String CLASS_NAME = "Help";
+		Help h = new Help();
+
+		private Help() {
+		}
+
+		public void onCreate( String in ) {
+
+
+			try ( Scanner scn = new Scanner( in ) ) {
+
+				String next = scn.next();
+
+			}
+		}
 	}
 
 }
