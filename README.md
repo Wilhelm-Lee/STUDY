@@ -29,7 +29,7 @@ Feel free to leave a comment if there were any valuable* suggestions. Or if you 
 
 ## Author
 ```Java
-class Author {
+public class Author {
     public static final String name = "William-Michael"; // Internet name
     public static final String email = "michaelwilliamlr@outlook.com";
 }
