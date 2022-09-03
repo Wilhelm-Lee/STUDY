@@ -23,9 +23,9 @@ Feel free to leave a comment if there were any valuable* suggestions. Or if you 
 3. Might cost a lot to develop, but still feels cheap ( Is that my problem? IDK honestly )
 4. One that alone, one that only, develops. Me.
 
-## Holder
+## Author
 ```Java
-class Holder {
+class Author {
     public static final String name = "William-Michael"; // Internet name
     public static final String email = "michaelwilliamlr@outlook.com";
 }
