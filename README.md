@@ -17,7 +17,7 @@ Feel free to leave a comment if there were any valuable* suggestions. Or if you 
 6. *Word searching* ( Like a dictionary without explainations but words and words only )
 7. What else... Oh, that's it
 
-## Specials
+## Features
 1. Terminal Interface
 2. For Linux terminal only |:P
 3. Might cost a lot to develop, but still feels cheap ( Is that my problem? IDK honestly )
