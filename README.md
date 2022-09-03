@@ -23,6 +23,10 @@ Feel free to leave a comment if there were any valuable* suggestions. Or if you 
 3. Might cost a lot to develop, but still feels cheap ( Is that my problem? IDK honestly )
 4. One that alone, one that only, develops. Me.
 
+## Icon
+
+[![study-icon.png](https://i.postimg.cc/D01pk9Vg/study-icon.png)](https://postimg.cc/vxHt5SZg)
+
 ## Author
 ```Java
 class Author {
