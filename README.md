@@ -20,8 +20,7 @@ Feel free to leave a comment if there were any valuable\* suggestions. Or if you
 ## Features
 1. Terminal Interface
 2. For Linux terminal only |:P
-3. Might cost a lot to develop, but still feels cheap ( Is that my problem? IDK honestly )
-4. One that alone, one that only, develops. Me.
+3. High customizable representations and compatibilities on reverse engineering
 
 ## Icon
 
