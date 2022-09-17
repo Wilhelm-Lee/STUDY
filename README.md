@@ -21,7 +21,7 @@ Feel free to leave a comment if there were any valuable\* suggestions. Or if you
 1. Terminal Interface
 2. For Linux terminal only |:P
 3. High customizable representations and compatibilities on reverse engineering
-4. User-friendly interface embeded ( unforced )
+4. User-friendly interface embedded ( unforced )
 5. Well extendabilities represents on plug-like code extension runs by main core ( isn't the feature from language itself? Eh? )
 
 ## Icon
