@@ -28,11 +28,9 @@ Feel free to leave a comment if there were any valuable\* suggestions. Or if you
 [![study-icon.png](https://i.postimg.cc/D01pk9Vg/study-icon.png)](https://postimg.cc/vxHt5SZg)
 
 ## Author
-```Java
-public class Author {
-    public static final String name = "William-Pascal"; // Internet name
-    public static final String email = "william_pascal@outlook.com";
-}
+```C
+const char name[] = "William-Pascal"; // Internet name
+const char email[] = "william_pascal@outlook.com";
 ```
 ( Those names were just for e-mail addresses )
 
