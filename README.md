@@ -22,7 +22,7 @@ Feel free to leave a comment if there were any valuable\* suggestions. Or if you
 2. For Linux terminal only |:P
 3. High customizable representations and compatibilities on reverse engineering
 4. User-friendly interface embedded ( unforced )
-5. Well extendabilities represents on plug-like code extension runs by main core ( isn't the feature from language itself? Eh? )
+5. Well extendabilities represents on plug-like code extension runs by main core
 
 ## Icon
 
