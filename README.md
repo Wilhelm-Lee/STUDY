@@ -31,7 +31,7 @@ Feel free to leave a comment if there were any valuable\* suggestions. Or if you
 ```Java
 public class Author {
     public static final String name = "William-Pascal"; // Internet name
-    public static final String email = "michaelwilliamlr@outlook.com";
+    public static final String email = "william_pascal@outlook.com";
 }
 ```
 ( Those names were just for e-mail addresses )
