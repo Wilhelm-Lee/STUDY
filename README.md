@@ -2,7 +2,7 @@
 
 Good news! Finally, after months of work, I have my chance to say it proudly, the prototype is officially released!
 
-Not only it's a great milestone to my own, but also, it is prof to my programming abilities on Java.
+Not only it's a great milestone to my own, but also, it is proof to my programming abilities on Java.
 
 I definitely would have more better version to make out in the future. So thank you all for scanning through my project! I appreciate it very much! \\(\^-\^)\/
 
