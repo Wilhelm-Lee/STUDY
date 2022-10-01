@@ -8,7 +8,6 @@ import work.shall.sys.Commands;
 import work.speculator.exception.ActionOverAbstractiveException;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static base.essention.BasicVariables.*;
@@ -39,7 +38,6 @@ public class ProcessIO {
 
             final String[] userInputSplit = removeExtraSpaces( userInputRaw, 0 ).split(
                     String.valueOf( CHARACTER_COMMON_SYMBOLS_SPACE ) );
-            System.out.println( Arrays.toString( userInputSplit ) );
             final List<String> userInputSplitArray = new ArrayList<>( List.of( userInputSplit ) );
             final List<Commands> userInputSplitArrayCommands = new ArrayList<>( 0 );
 
@@ -85,20 +83,20 @@ public class ProcessIO {
             if ( len == 2 && B ) { return String.valueOf( raw.charAt( 1 ) ); }
             if ( len == 2 && C ) { return String.valueOf( raw.charAt( 0 ) ); }
 
-            boolean isAllInputJustSpaces = true;
-            for (
-                    int i = 0;
-                    i < len;
-                    i++
-            ) {
-                final boolean TAB = String.valueOf( raw.charAt( i ) ).equals( STRING_REGEX_TABULATION );
-                final boolean SPC = raw.charAt( i ) == CHARACTER_COMMON_SYMBOLS_SPACE;
-                if ( ( TAB && !SPC ) || ( !TAB && SPC ) ) {
-                    isAllInputJustSpaces = false;
-                    break;
-                }
-            }
-            if ( isAllInputJustSpaces ) { return STRING_COMMON_SYMBOLS_EMPTY; }
+//            boolean isAllInputJustSpaces = true;
+//            for (
+//                    int i = 0;
+//                    i < len;
+//                    i++
+//            ) {
+//                final boolean TAB = String.valueOf( raw.charAt( i ) ).equals( STRING_REGEX_TABULATION );
+//                final boolean SPC = raw.charAt( i ) == CHARACTER_COMMON_SYMBOLS_SPACE;
+//                if ( ( TAB && !SPC ) || ( !TAB && SPC ) ) {
+//                    isAllInputJustSpaces = false;
+//                    break;
+//                }
+//            }
+//            if ( isAllInputJustSpaces ) { return STRING_COMMON_SYMBOLS_EMPTY; }
 
             if ( B ) {
                 return removeExtraSpaces( raw.substring( 1, len ), lastIndex );

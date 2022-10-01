@@ -27,8 +27,8 @@ public class ProcessCommand {
 
         /* Not an empty input */
         if ( !commands.isEmpty() &&
-             !commands.get( 0 ).getName().equalsIgnoreCase( BasicVariables.STRING_COMMON_SYMBOLS_EMPTY ) &&
-             !commands.get( commands.size() - 1 ).getName().equals( DONE.getName() ) ) {
+               !commands.get( 0 ).getName().equalsIgnoreCase( BasicVariables.STRING_COMMON_SYMBOLS_EMPTY ) &&
+               !commands.get( commands.size() - 1 ).getName().equals( DONE.getName() ) ) {
             new ProcessIO.ProcessOutput(
                     BasicVariables.STRING_BASIC_OUTPUT_LOG_TYPE_WARN,
                     INITIATOR + commands.get( commands.size() - 1 ).getName(),
@@ -57,6 +57,7 @@ public class ProcessCommand {
                     break;
                 }
             }
+            /* commands.size() == 0 */
         }
     }
 
@@ -67,17 +68,22 @@ public class ProcessCommand {
             int index
     ) {
 
-        if ( present.getName().equalsIgnoreCase( "DONE" ) )
-            { return 0; }
+        if ( present.getName().equalsIgnoreCase( "DONE" ) ) { return 0; }
 
-        if ( present.getName().equalsIgnoreCase( "HELP" ) )
-            { new CommandSet.Help( previous, index ).behaviour( next ); return 0; }
+        if ( present.getName().equalsIgnoreCase( "HELP" ) ) {
+            new CommandSet.Help( previous, index ).behaviour( next );
+            return 0;
+        }
 
-        if ( present.getName().equalsIgnoreCase( "EXIT" ) )
-            { new CommandSet.Exit( previous, index ).behaviour( next ); return 0; }
+        if ( present.getName().equalsIgnoreCase( "EXIT" ) ) {
+            new CommandSet.Exit( previous, index ).behaviour( next );
+            return 0;
+        }
 
-        if ( present.getName().equalsIgnoreCase( "TIME" ) )
-            { new CommandSet.Time( previous, index ).behaviour( next ); return 0; }
+        if ( present.getName().equalsIgnoreCase( "TIME" ) ) {
+            new CommandSet.Time( previous, index ).behaviour( next );
+            return 0;
+        }
 
         return 1; // error reached
 
