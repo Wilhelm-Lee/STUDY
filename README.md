@@ -4,7 +4,7 @@ Good news! Finally, after months of work, I have my chance to say it proudly, th
 
 Not only it's a great milestone to my own, but also, it is a proof to my programming abilities on Java.
 
-I definitely would have more better version to work on in the future. So thank you all for scanning through my project! I appreciate it very much! \\(\^-\^)\/
+I definitely would have more better version to work on in the future. So, thank you all for scanning through my project! I appreciate it very much! \\(\^-\^)\/
 
 And, as always...
 
