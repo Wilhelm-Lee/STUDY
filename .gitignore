@@ -1,0 +1,5 @@
+openjdk-18.0.2/*
+out/*
+.idea/*
+Study.iml
+README.md

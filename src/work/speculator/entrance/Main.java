@@ -1,4 +1,4 @@
-package study.processors;
+package work.speculator.entrance;
 
 /*
  * [ TABLE Visibility ]
@@ -34,10 +34,10 @@ package study.processors;
  * | <!>unsigned     short                0 to 2^32 - 1                                      0 to 65535                      0                   2 Byte / 16 Bits                        |
  * |    signed       int              -2^32 to 2^32 - 1                            -2147483648 to 2147483647                 0                   4 Byte / 32 Bits                        |
  * | <!>unsigned     int                  0 to 2^64 - 1                                      0 to 4294967294                 0                   4 Byte / 32 Bits                        |
- * |    unsigned     float           2^-149 to (2-2^-23)·2^127                0x1.effeteP+127f to 0x0.000002P-126f           0.0f                4 Byte / 32 Bits    Standard: IEEE 754  |
+ * |    signed       float           2^-149 to (2-2^-23)·2^127                0x1.effeteP+127f to 0x0.000002P-126f           0.0f                4 Byte / 32 Bits    Standard: IEEE 754  |
  * |    signed       long             -2^64 to 2^64 - 1                   -9223372036854775808 to 9223372036854775807        0                   8 Byte / 64 Bits                        |
- * | <!>unsigned     long                 0 to 2^64 - 1                   -9223372036854775808 to 9223372036854775807        0                   8 Byte / 64 Bits                        |
- * |    unsigned     double         2^-1074 to (2-2^-52)·2^1023        0x0.0000000000001P-1022 to 0x1.fffffffffffffP+1023    0.0d                8 Byte / 64 Bits    Standard: IEEE 754  |
+ * | <!>unsigned     long                 0 to 2^64 - 1                                      0 to 18446744073709551615       0                   8 Byte / 64 Bits                        |
+ * |    signed       double         2^-1024 to (2-2^-52)·2^1023        0x0.0000000000001P-1022 to 0x1.fffffffffffffP+1023    0.0d                8 Byte / 64 Bits    Standard: IEEE 754  |
  * *-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
  * <!> Stands for Theoretically only | Not contained in Java
  * ..................................................................................................................................................................August 7th, 2022.....
@@ -54,43 +54,39 @@ package study.processors;
  *      V                                                                                             ^
  * Being proceeded and turned into cmd, sent to ProcessCommand      Being turned into results, sent to ProcessIO.ProcessOutput
  *      V                                                                                             ^
- * Collect module cmd from CommandSet then proceed                     Collect module study.output-text from BasicVariables then proceed
+ * Collect module cmd from Commands then proceed                     Collect module work.speculator.echo-text from BasicVariables then proceed
  *      V                                                                                             ^
  *      + ---------------- > --------------------- Operating -------------------- > ----------------- +
  *
  */
 
-import study.input.BasicInput;
-import study.output.BasicOutput;
-import study.storage.BasicVariables;
+import work.shall.usr.Shall;
+import work.speculator.exception.ActionOverAbstractiveException;
 
 /**
  * @author william
+ * @note {@code CLASS_NAME} has been replaced by {@code Class.class.getName()}
  */
 public class Main {
 
+    private boolean termination = false;
 
-	/**
-	 * main(String[]) might be final wrote in near-future(0.5 year)
-	 */
-	public static void main( String[] args ) {
+    public boolean getTermination() {
+        return this.termination;
+    }
 
-		BasicOutput basicOutput = new BasicOutput();
-		ProcessIO.ProcessInput processInput = new ProcessIO.ProcessInput();
+    public void setTermination( boolean termination ) {
+        this.termination = termination;
+    }
 
-		boolean exit = false;
+    public static void main( String[] args )
+            throws ActionOverAbstractiveException {
 
-		while ( !exit ) {
+        final Main runtimeMain = new Main();
 
-			basicOutput.greetings();
+        while ( !runtimeMain.getTermination() ) {
+            new Shall();
+        }
 
-			int rtnCode = processInput.onCreate( BasicInput.recorder( BasicVariables.BASIC_INPUT_RECORDER_TYPE_REGULAR ) );
-
-			if ( rtnCode == BasicVariables.ConsoleReturn.EXIT_CODE ) {
-				exit = true;
-			}
-
-		}
-
-	}
+    }
 }
