@@ -1,4 +1,12 @@
-# Study
+# Study - Prototype
+
+Good news! Finally, after months of work, I have my chance to say it proudly, the prototype is officially released!
+
+Not only it's a great milestone to my own, but also, it is prof to my programming abilities on Java.
+
+I definitely would have more better version to make out in the future. So thank you all for scanning through my project! I appreciate it very much! \\(\^-\^)\/
+
+And, as always...
 
 Just in case, please let me explain some certain things.
 
@@ -16,7 +24,7 @@ Feel free to leave a comment if there were any valuable\* suggestions. Or if you
 5. *Calculator*
 6. *Word searching* ( Like a dictionary without explainations but words and words only )
 7. *Painter* \(\'O \'\) _--={{ in terminal? }}
-7. What else... Oh, that's it
+8. What else... Oh, that's it
 
 ## Features
 1. Terminal Interface
@@ -30,9 +38,9 @@ Feel free to leave a comment if there were any valuable\* suggestions. Or if you
 [![study-icon.png](https://i.postimg.cc/D01pk9Vg/study-icon.png)](https://postimg.cc/vxHt5SZg)
 
 ## Author
-```C
-const char name[] = "William-Pascal"; // Internet name
-const char email[] = "william_pascal@outlook.com";
+```Java
+java.lang.String name[] = "William-Pascal"; // Internet name
+java.lang.String char email[] = "william_pascal@outlook.com";
 ```
 ( Those names were just for e-mail addresses )
 
