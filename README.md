@@ -15,7 +15,7 @@ Feel free to leave a comment if there were any valuable\* suggestions. Or if you
 4. *Music box* ( Local music player )
 5. *Calculator*
 6. *Word searching* ( Like a dictionary without explainations but words and words only )
-7. *Painter* \'O \' _--={{ in terminal? }}
+7. *Painter* \(\'O \'\) _--={{ in terminal? }}
 7. What else... Oh, that's it
 
 ## Features
