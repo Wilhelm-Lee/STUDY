@@ -12,7 +12,7 @@ Just in case, please let me explain some certain things.
 
 This README along with the project you've seen or about to see are still in early development.
 
-Feel free to leave a comment if there were any valuable\* suggestions. Or if you want to just complain about some specific disadvantages from the project, just write down or send to me via email, thank you!
+Feel free to leave a comment if there were any \*valuable suggestions. Or if you want to just complain about some specific disadvantages from the project, just write down or send to me via email, thank you!
 
 **Your attentions are the greatest encouragement to me, Thanks again!**
 
