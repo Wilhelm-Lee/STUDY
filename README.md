@@ -76,7 +76,7 @@ We are sorry.
 
 ~~Who let it in?!~~ <font size=6>Aughhhhhhh!!!</font>
 
-[![x-Qc-AUGHHHHHHH.png](https://i.postimg.cc/ZKnF2FB1/x-Qc-AUGHHHHHHH.png)](https://postimg.cc/XpMCy5g8)
+[![x-Qc-AUGHHHHHHH.png](https://i.postimg.cc/MZh0Y6hB/x-Qc-AUGHHHHHHH.png)](https://postimg.cc/RqLnSBCC)
 
 <b><font size=5>Scenario II</font></b>
 
