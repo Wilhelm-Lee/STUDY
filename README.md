@@ -72,7 +72,7 @@ Isn't that attractive?
 
 We are sorry.
 
-<u><b><font color="#FFFFFF">ChromeBook:</font></b></u>
+<u><b><font color="#FFFFFF">ChromeOS:</font></b></u>
 
 ~~Who let it in?!~~ <font size=6>Aughhhhhhh!!!</font>
 
