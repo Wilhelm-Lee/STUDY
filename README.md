@@ -1,47 +1,98 @@
-# Study - Prototype
+# Study
 
-Good news! Finally, after months of work, I have my chance to say it proudly, the prototype is officially released!
+### Huh, what is this?
+Glad you asked!
 
-Not only it's a great milestone to my own, but also, it is a proof to my programming abilities on Java.
+Origenally, it was a project which aimed to help myself better understanding Java. When time passes on, I had a even greater idea, which is what I am forcusing on right now -- rewritting Study with <u><b><font color="#FFFF00" size=4 face="Courier Prime">C</font></b></u>[arnival](https://github.com/WilliamPascal/Carnival "LinkToCarnival").
 
-I definitely would have more better version to work on in the future. So, thank you all for scanning through my project! I appreciate it very much! \\(\^-\^)\/
+### What?
+More questions? Should you be!
 
-And, as always...
+Study is similar to your terminal apps, or more like your interactive consoles. Within your <u><font color="#444444">~~__PENGUIN & GLASSES__~~</font></u> <font color="#FFFFFF">__Linux__</font> & <font color="#FFFFFF">__Windows__</font> (or perhaps <font color="#FFFFFF">__MacOS__</font> as well), you can use both system commands and Study commands to help you solve daily needs:
 
-Just in case, please let me explain some certain things.
+- [X] FileManagement (VerAbove. Oct1st2022_PROTOTYPE)
+- [ ] ToDoList
+- [ ] Reminders
+- [ ] AlarmClock
+- [ ] TextEditor
+- [ ] Programming
+- [ ] MusicPlayer
+- [ ] ImageViewer
 
-This README along with the project you've seen or about to see are still in early development.
+And don't even mention we could have <u><b><font color="#FF9900" size=4 face="Noto Serif Display Black">X</font></b></u>[11](https://x.org/wiki/) support for this very Project to "Study" on -- <u><b><i><font color="#FF9900" size=4 face="Noto Serif Display Black">X</font></i></b></u>[study](https://github.com/WilliamPascal/Xstudy)
 
-Feel free to leave a comment if there were any \*valuable suggestions. Or if you want to just complain about some specific disadvantages from the project, just write down or send to me via email, thank you!
+### Fine, fine. But install?
+Ahh, name of the game! [PepeClap][EasyClap]
 
-**Your attentions are the greatest encouragement to me, Thanks again!**
+<b><font size=5>Scenario I</font></b>
 
-## Purpose
-1. *Regular computer tool* ( File management etc. )
-2. *Todo List* ( \*honk\* )
-3. *Good old alarm*
-4. *Music box* ( Local music player )
-5. *Calculator*
-6. *Word searching* ( Like a dictionary without explainations but words and words only )
-7. *Painter* \(\'O \'\) _--={{ in terminal? }}
-8. What else... Oh, that's it
+Please make sure that you have your Java properties installed properly:
 
-## Features
-1. Terminal Interface
-2. For Linux terminal only |:P
-3. High customizable representations and compatibilities on reverse engineering
-4. User-friendly interface embedded ( unforced )
-5. Well extendabilities represents on plug-like code extension runs by main core
+<font face="Courier Prime">
++=============+
 
-## Icon
++-> [Windows](https://www.java.com/en/download/windows_manual.jsp "WindowsJavaInstallLink") <-+
 
-[![study-icon.png](https://i.postimg.cc/D01pk9Vg/study-icon.png)](https://postimg.cc/vxHt5SZg)
++=============+
+</font>
 
-## Author
-```C
-const char *name = "William-Pascal"; // Internet name
-const char *email = "william_pascal@outlook.com";
+<u><b><font color="#FFFFFF">ArchLinux:</font></b></u> (My OS)
+```sh
+sudo pacman -S java17-openjfx && sudo pacman -Syy
 ```
-( Those names were just for e-mail addresses )
 
-valuable*: Judge by your own.
+<u><b><font color="#FFFFFF">Ubuntu:</font></b></u>
+```sh
+sudo apt install default-jdk default-jre && sudo apt update
+```
+
+<font face="Courier Prime">
++===========+
+
++-> [MacOS](https://www.oracle.com/java/technologies/downloads/#jdk19-mac) <-+
+
++===========+
+</font>
+
+<u><b><font color="#FFFFFF">Android:</font></b></u>
+
+As the majority of mobile device OS, it is important to someone like geek to have a classic terminal UI interactive console toolset to control their devices. 
+
+Full power-on match presented by Andoird and Study.
+
+We announce <u><b><i><font color="#33CC00" size=4 face="Noto Serif">A</font></i></b></u>[ttraction](https://github.com/WilliamPascal/Attraction).
+
+It support more SWEET features, abised to programming, GUI and portability.
+
+Code Editor, Code Compiler, Code Executor are all included.
+
+Isn't that attractive?
+
+<u><b><font color="#FFFFFF">IOS:</font></b></u>
+
+We are sorry.
+
+<u><b><font color="#FFFFFF">ChromeBook:</font></b></u>
+
+~~Who let it in?!~~ <font size=6>Aughhhhhhh!!!</font>
+
+[![x-Qc-AUGHHHHHHH.png](https://i.postimg.cc/ZKnF2FB1/x-Qc-AUGHHHHHHH.png)](https://postimg.cc/XpMCy5g8)
+
+<b><font size=5>Scenario II</font></b>
+
+<font color="#FF0023">
+////////////////////// FILE UNDER STRUCTURE //////////////////////
+
+<u>***There are more details we'd find and confirm, sorry for inconvenience!***</u>
+
+////////////////////// README IS NOT FINISHED //////////////////////
+</font>
+
+### Author?
+Oh right! <font color="#FFFFFF">By the way</font>, I'm <font color="#FFFFFF">__William Pascal__</font>, quite nice to ***meet*** you.
+
+### BlackMail, address!
+Okay, here you go:
+```
+william_pascal@outlook.com
+```
