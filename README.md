@@ -103,7 +103,7 @@ java -jar study.jar
 
 Everything well? Good job!
 
-If not, jump to [TrobbleShooting](./README.md/#buttom)
+If not, please jump to TrobbleShooting manually(buttom page).
 
 Now if you are a Linux user, the following command can make you start conveniently:
 ```sh
