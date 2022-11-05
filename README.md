@@ -103,7 +103,7 @@ java -jar study.jar
 
 Everything well? Good job!
 
-If not, jump to [TrobbleShooting](./README.md/#I_GOT_A_PROBLEM!!!\(TrobbleShooting\))
+If not, jump to [TrobbleShooting](./README.md/#buttom)
 
 Now if you are a Linux user, the following command can make you start conveniently:
 ```sh
@@ -123,5 +123,5 @@ Okay, here you go:
 william_pascal@outlook.com
 ```
 
-### I_GOT_A_PROBLEM!!!(TrobbleShooting)
+### I GOT A PROBLEM!!!(TrobbleShooting)
 ---
