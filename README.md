@@ -1,11 +1,15 @@
 # Study
 
 ### Huh, what is this?
+---
+
 Glad you asked!
 
 Origenally, it was a project which aimed to help myself better understanding Java. When time passes on, I had a even greater idea, which is what I am forcusing on right now -- rewritting Study with <u><b><font color="#FFFF00" size=4 face="Courier Prime">C</font></b></u>[arnival](https://github.com/WilliamPascal/Carnival "LinkToCarnival").
 
 ### What?
+---
+
 More questions? Should you be!
 
 Study is similar to your terminal apps, or more like your interactive consoles. Within your <u><font color="#444444">~~__PENGUIN & GLASSES__~~</font></u> <font color="#FFFFFF">__Linux__</font> & <font color="#FFFFFF">__Windows__</font> (or perhaps <font color="#FFFFFF">__MacOS__</font> as well), you can use both system commands and Study commands to help you solve daily needs:
@@ -22,6 +26,8 @@ Study is similar to your terminal apps, or more like your interactive consoles. 
 And don't even mention we could have <u><b><font color="#FF9900" size=4 face="Noto Serif Display Black">X</font></b></u>[11](https://x.org/wiki/) support for this very Project to "Study" on -- <u><b><i><font color="#FF9900" size=4 face="Noto Serif Display Black">X</font></i></b></u>[study](https://github.com/WilliamPascal/Xstudy)
 
 ### Fine, fine. But install?
+---
+
 Ahh, name of the game! [PepeClap][EasyClap]
 
 <b><font size=5>Scenario I</font></b>
@@ -80,19 +86,42 @@ We are sorry.
 
 <b><font size=5>Scenario II</font></b>
 
-<font color="#FF0023">
-////////////////////// FILE UNDER STRUCTURE //////////////////////
+Here, once you have downloaded files in a zip or directly using __git__, what you need to do is to make the project into a "__.jar__" file. Then you can start running it.
 
-<u>***There are more details we'd find and confirm, sorry for inconvenience!***</u>
+Take a look.
 
-////////////////////// README IS NOT FINISHED //////////////////////
-</font>
+```sh
+jar cf nameItYourOwn.jar projectFolderPath/*
+java -jar nameItYourOwn.jar
+```
+
+The Janet and John bit:
+```sh
+jar cf study.jar Study/*
+java -jar study.jar
+```
+
+Everything well? Good job!
+
+If not, jump to [TrobbleShooting](./README.md/#I_GOT_A_PROBLEM!!!\(TrobbleShooting\))
+
+Now if you are a Linux user, the following command can make you start conveniently:
+```sh
+sudo 
+```
 
 ### Author?
+---
+
 Oh right! <font color="#FFFFFF">By the way</font>, I'm <font color="#FFFFFF">__William Pascal__</font>, quite nice to ***meet*** you.
 
 ### BlackMail, address!
+---
+
 Okay, here you go:
 ```
 william_pascal@outlook.com
 ```
+
+### I_GOT_A_PROBLEM!!!(TrobbleShooting)
+---
