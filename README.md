@@ -95,13 +95,13 @@ jar cf study.jar Study/*
 java -jar study.jar
 ```
 
-Everything well? Good job!
+Everything is going well? Good job!
 
 If not, please jump to TrobbleShooting manually(buttom page).
 
 Now if you are a Linux user, the following command can make you start conveniently:
 ```sh
-sudo 
+sudo # This file is not done yet, please stand by.
 ```
 
 ### Author?
