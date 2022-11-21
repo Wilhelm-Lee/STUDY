@@ -64,7 +64,7 @@ Full power-on match presented by Andoird and Study.
 
 We announce <u><b><i><font color="#33CC00" size=4 face="Noto Serif">A</font></i></b></u>[ttraction](https://github.com/WilliamPascal/Attraction).
 
-It support more SWEET features, tendencies to programming, GUI and portability.
+It support more SWEET features, tendencies to programming, GUI interacting and portability.
 
 Code Editor, Code Compiler, Code Executor are all included.
 
