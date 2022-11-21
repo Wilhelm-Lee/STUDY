@@ -35,11 +35,9 @@ Ahh, name of the game! [PepeClap][EasyClap]
 Please make sure that you have your Java properties installed properly:
 
 <font face="Courier Prime">
-+=============+
 
-+-> [Windows](https://www.java.com/en/download/windows_manual.jsp "WindowsJavaInstallLink") <-+
+> [Windows](https://www.java.com/en/download/windows_manual.jsp "WindowsJavaInstallLink")
 
-+=============+
 </font>
 
 <u><b><font color="#FFFFFF">ArchLinux:</font></b></u> (My OS)
@@ -53,11 +51,9 @@ sudo apt install default-jdk default-jre && sudo apt update
 ```
 
 <font face="Courier Prime">
-+===========+
 
-+-> [MacOS](https://www.oracle.com/java/technologies/downloads/#jdk19-mac) <-+
+> [MacOS](https://www.oracle.com/java/technologies/downloads/#jdk19-mac)
 
-+===========+
 </font>
 
 <u><b><font color="#FFFFFF">Android:</font></b></u>
