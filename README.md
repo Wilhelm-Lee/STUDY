@@ -76,9 +76,7 @@ We are sorry.
 
 <u><b><font color="#FFFFFF">ChromeOS:</font></b></u>
 
-~~Who let it in?!~~ <font size=6>Aughhhhhhh!!!</font>
-
-[![x-Qc-AUGHHHHHHH.png](https://i.postimg.cc/MZh0Y6hB/x-Qc-AUGHHHHHHH.png)](https://postimg.cc/RqLnSBCC)
+すみません (Sumimasen)
 
 <b><font size=5>Scenario II</font></b>
 
