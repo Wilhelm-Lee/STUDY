@@ -97,7 +97,7 @@ If not, please jump to TrobbleShooting manually(buttom page).
 
 Now if you are a Linux user, the following command can make you start conveniently:
 ```sh
-sudo # This README is not done yet, please stand by.
+sudo # This README is not done yet, please be aware.
 ```
 
 ---
