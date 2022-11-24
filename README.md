@@ -1,14 +1,12 @@
-# STUDY
+<h1 align="center">STUDY</h>
 
 ### Huh, what is this?
----
 
 Glad you asked!
 
 Origenally, it was a project which aimed to help myself better understanding Java. When time passes on, I had a even greater idea, which is what I am forcusing on right now -- rewritting Study with <u><b><font color="#FFFF00" size=4 face="Courier Prime">C</font></b></u>[arnival](https://github.com/WilliamPascal/Carnival "LinkToCarnival").
 
 ### What?
----
 
 More questions? Should you be!
 
@@ -23,10 +21,9 @@ Study is similar to your terminal apps, or more like your interactive consoles. 
 - [ ] MusicPlayer
 - [ ] ImageViewer
 
-And don't even mention we could have <u><b><font color="#FF9900" size=4 face="Noto Serif Display Black">X</font></b></u>[11](https://x.org/wiki/) support for this very Project to "Study" on -- <u><b><i><font color="#FF9900" size=4 face="Noto Serif Display Black">X</font></i></b></u>[study](https://github.com/WilliamPascal/Xstudy)
+And don't even mention we could have <u><b><font color="#FF9900" size=4 face="Noto Serif Display Black">X</font></b></u>[11](https://x.org/wiki/) support for this very Project to "Study" on -- <u><b><i><font color="#FF9900" size=4 face="Noto Serif Display Black">X</font></i></b></u>[STUDY](https://github.com/WilliamPascal/Xstudy)
 
 ### Fine, fine. But install?
----
 
 Ahh, name of the game! [PepeClap][EasyClap]
 
@@ -104,18 +101,18 @@ Now if you are a Linux user, the following command can make you start convenient
 sudo # This README is not done yet, please stand by.
 ```
 
-### Author?
 ---
+### Author?
+
 
 Oh right! <font color="#FFFFFF">By the way</font>, I'm <font color="#FFFFFF">__William Pascal__</font>, quite nice to ***meet*** you.
 
 ### BlackMail, address!
----
 
 Okay, here you go:
 ```
 william_pascal@outlook.com
 ```
 
-### I'v GOT A PROBLEM!!!(TrobbleShooting)
 ---
+### I'v GOT A PROBLEM!!!(TrobbleShooting)
