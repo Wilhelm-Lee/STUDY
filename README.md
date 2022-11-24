@@ -1,4 +1,4 @@
-# Study
+# STUDY
 
 ### Huh, what is this?
 ---
