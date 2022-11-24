@@ -93,7 +93,7 @@ java -jar study.jar
 
 Everything is going well? Good job!
 
-If not, please jump to TrobbleShooting manually(buttom page).
+If not, please jump to TrobbleShooting manually(at the buttom of page).
 
 Now if you are a Linux user, the following command can make you start conveniently:
 ```sh
