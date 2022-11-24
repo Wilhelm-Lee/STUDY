@@ -19,7 +19,6 @@ Study is similar to your terminal apps, or more like your interactive consoles. 
 - [ ] TextEditor
 - [ ] Programming
 - [ ] MusicPlayer
-- [ ] ImageViewer
 
 And don't even mention we could have <u><b><font color="#FF9900" size=4 face="Noto Serif Display Black">X</font></b></u>[11](https://x.org/wiki/) support for this very Project to "Study" on -- <u><b><i><font color="#FF9900" size=4 face="Noto Serif Display Black">X</font></i></b></u>[STUDY](https://github.com/WilliamPascal/Xstudy)
 
