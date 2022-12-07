@@ -1,5 +1,8 @@
-openjdk-18.0.2/*
+.jdk.intellij
+.run
+.github
+jdk
 out/*
 .idea/*
 Study.iml
-README.md
+README_.md
