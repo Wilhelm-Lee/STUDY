@@ -1,4 +1,4 @@
-<h1 align="center">STUDY</h>
+<h1 align="center">STUDY</h1>
 
 ###### ps: [Rebuilt Version](https://github.com/WilliamPascal/STUDY/tree/master)
 
