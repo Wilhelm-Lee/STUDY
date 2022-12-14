@@ -1,5 +1,7 @@
 <h1 align="center">STUDY</h>
 
+###### ps: [Remastered Version](https://github.com/WilliamPascal/STUDY/tree/master)
+
 ### Huh, what is this?
 
 Glad you asked!
