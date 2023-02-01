@@ -58,7 +58,7 @@ sudo apt install default-jdk default-jre && sudo apt update
 
 As the majority of mobile device OS, it is important to someone like geek to have a classic terminal UI interactive console toolset to control their devices. 
 
-Full power-on match presented by Andoird and Study.
+Full power-on match presented by Andoird and STUDY.
 
 We announce <u><b><i><font color="#33CC00" size=4 face="Noto Serif">A</font></i></b></u>[ttraction](https://github.com/WilliamPascal/Attraction).
 
