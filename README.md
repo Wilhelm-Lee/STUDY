@@ -112,7 +112,7 @@ Oh right! <font color="#FFFFFF">By the way</font>, I'm <font color="#FFFFFF">__W
 
 Okay, here you go:
 ```
-william_pascal@outlook.com
+williampascal_official@outlook.com
 ```
 
 ---
