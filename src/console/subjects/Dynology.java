@@ -34,6 +34,9 @@ import console.meta.Dyess;
 @Definitions
 public abstract class Dynology implements Dyeable {
 
+    /**
+     *
+     */
     Dyess color;
     int[] position;
     int[] info;
@@ -43,5 +46,4 @@ public abstract class Dynology implements Dyeable {
         this.position = position;
         this.info = info;
     }
-
 }
