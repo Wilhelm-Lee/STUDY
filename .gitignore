@@ -2,4 +2,7 @@
 .idea/
 .jdk/
 out/
+.*jdk*
+*.xmi
+*.iml
 
