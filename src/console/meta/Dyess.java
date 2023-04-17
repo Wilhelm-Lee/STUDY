@@ -34,7 +34,7 @@ public class Dyess {
 
         public Channel(long rChannel, long gChannel,
                        long bChannel, long aChannel) {
-            /* Don't forget this! */
+            /* Don't forget this initiation! */
             this.mRGBAChannels = new long[4];
 
             this.mRGBAChannels[0] = rChannel;
@@ -56,26 +56,26 @@ public class Dyess {
             final long MAX = 0xFFFFFFFFL;
             final long MIN = 0x00000000L;
             final long delta = (MAX - channelVolume);
-            int overflowed = 0;
+            long overflowed = MIN;
 
-            if (channelVolume < 0) {
+            if (channelVolume < MIN) {
                 throw new IllegalArgumentException(
                         "RGBAChannel Volume cannot be negative.");
             }
             if (channelVolume > MAX) {
-                overflowed = ();
+                overflowed = (/* YOU LEFT HERE */);
                 channelVolume = MAX;
             }
-            if (adjustment == 0) {
-                return 0;
-            } else if (adjustment > 0) {
+            if (adjustment == MIN) {
+                return MIN;
+            } else if (adjustment > MIN) {
                 /* Will not overflow */
                 if (adjustment < delta) {
-                    return 0;
+                    return MIN;
                 } else /* Will overflow */ {
                     return (adjustment - MAX);
                 }
-            } else /* adjustment < 0 */ {
+            } else /* adjustment < MIN */ {
 
             }
         }

@@ -30,20 +30,28 @@ import console.meta.Dyess;
  * </p>
  * @author william
  * @since 2304051680658569.2
+ * @see console.abilities.Dyeable
  */
 @Definitions
 public abstract class Dynology implements Dyeable {
 
     /**
-     *
+     * Color element
      */
     Dyess color;
+    /**
+     * @nativeRef Carnival/src/ui/components/geoms.h/S_coordinate : struct
+     */
     int[] position;
-    int[] info;
+    /**
+     * For some instances, {@code BOLD=1; ITALIC=3; REVERSE=7 etc.}
+     * @nativeRef "/bin/sh" builtin
+     */
+    int[] additionalFormat;
 
-    protected Dynology(Dyess color, int[] position, int[] info) {
+    protected Dynology(Dyess color, int[] position, int[] additionalFormat) {
         this.color = color;
         this.position = position;
-        this.info = info;
+        this.additionalFormat = additionalFormat;
     }
 }
