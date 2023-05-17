@@ -6,7 +6,7 @@
 
 Glad you asked!
 
-Origenally, it was a project which aimed to help myself better understanding Java. When time passes on, I had a even greater idea, which is what I am forcusing on right now -- rewritting Study with <u><b><font color="#FFFF00" size=4 face="Courier Prime">C</font></b></u>[arnival](https://github.com/WilliamPascal/Carnival "LinkToCarnival").
+Originally, it was a project which aimed to help myself better understanding Java. When time passes on, I had a even greater idea, which is what I am forcusing on right now -- rewritting Study with <u><b><font color="#FFFF00" size=4 face="Courier Prime">C</font></b></u>[arnival](https://github.com/WilliamPascal/Carnival "LinkToCarnival").
 
 ### What?
 
