@@ -66,7 +66,7 @@ It support more SWEET features, tendencies to programming, GUI interacting and p
 
 Code Editor, Code Compiler, Code Executor are all included.
 
-Isn't that attractive?
+Isn't that rather attractive?
 
 <u><b><font color="#FFFFFF">IOS:</font></b></u>
 
